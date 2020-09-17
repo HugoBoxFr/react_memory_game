@@ -29,7 +29,7 @@ function App() {
           <nav className="Nav" id="nav">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/"><i class="fas fa-university"></i> Sanctuary</Link>
               </li>
             </ul>
           </nav>
