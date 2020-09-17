@@ -15,19 +15,25 @@ function Table() {
     const [points, setPoints] = useState(0);
     const [count, setCount] = useState(0);
 
-
     useEffect(() => {
+        if (mode === "6") {
+            const screen = document.getElementById("display");
+            console.log(screen)
+            screen.style.cssText = "width: 900px;";
+        }
+        
         const fetchData = () => {
             let saintsList = Schema.saints;
-
             let selectedSaints = [];
 
-            for (let i = 0; i < mode; i++) {
+            let it = 0;
+
+            while (it !== parseInt(mode)) {
                 let rand = saintsList[Math.floor(Math.random() * saintsList.length)];
-                selectedSaints.push(rand, rand)
-                
-                const index = saintsList.indexOf(rand);
-                saintsList.splice(index, 1);
+                if (!selectedSaints.includes(rand)) {
+                    selectedSaints.push(rand, rand);
+                    it++;
+                }
             }
 
             shuffle(selectedSaints);
@@ -35,6 +41,7 @@ function Table() {
         }
         fetchData();
     }, [setCards]);
+
 
     function shuffle(array) {
         let currentIndex = array.length, temporaryValue, randomIndex;
@@ -139,7 +146,7 @@ function Table() {
                 <h3>Score : {points} - { count > 1 ? "Turns" : "Turn"} : {count}</h3>
             </div>
 
-            <div className="SaintsList">
+            <div className="SaintsList" id="display">
 
                 <ul>
                     { 

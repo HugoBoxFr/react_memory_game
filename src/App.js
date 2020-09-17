@@ -9,7 +9,6 @@ import {
   Link
 } from "react-router-dom";
 
-
 (function(window, document){
   window.onload = init;
   
@@ -29,7 +28,7 @@ function App() {
       <Router>
           <nav className="Nav" id="nav">
             <ul>
-              <li onClick={() => document.location.reload()}>
+              <li>
                 <Link to="/">Home</Link>
               </li>
             </ul>

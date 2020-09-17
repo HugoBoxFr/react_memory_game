@@ -15,12 +15,12 @@ function Home() {
                 <ul>
                     <li>
                         <Link to={'/game/6'}>
-                            <button>Easy</button>
+                            <button value="6">Easy</button>
                         </Link>
                     </li>
                     <li>
                         <Link to={'/game/12'}>
-                            <button>Medium</button>
+                            <button value="9">Medium</button>
                         </Link>
                     </li>
                 </ul>
