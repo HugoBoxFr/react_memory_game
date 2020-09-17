@@ -1,0 +1,23 @@
+.flip90 {
+    -o-transform: rotateY(90deg);
+    -webkit-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+
+.transition {
+    -webkit-transition: all .5s ease-in .5s;
+    -moz-transition: all .5s ease-in .5s;
+    -ms-transition: all .5s ease-in .5s;
+    -o-transition: all .5s ease-in .5s;
+    transition: all .5s ease-in .5s;
+}
+
+img {
+    cursor: pointer;
+}

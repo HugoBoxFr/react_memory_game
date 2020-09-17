@@ -1,0 +1,105 @@
+.Game-Table {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.SaintsList {
+    width: 1080px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.SaintsList ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.SaintsList ul li {
+    list-style: none;
+    width: 140px;
+    height: 200px;
+    margin: 10px;
+    position: relative;
+}
+
+.SaintsList ul li img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 3px solid white;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+}
+
+.Score-bar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .8);
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+}
+
+.Score-bar h3 {
+    margin-right: 30px;
+}
+
+.block {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    z-index: 5;
+    background-color: white;
+    bottom: calc(50vh - 150px);
+    left: calc(50% - 250px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .8);
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+    -webkit-transition: all 2s ease 2s;
+    -moz-transition: all 2s ease 2s;
+    -ms-transition: all 2s ease 2s;
+    -o-transition: all 2s ease 2s;
+    transition: all 2s ease 2s;
+}
+
+.block button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+}
+
+.block button:nth-child(1) {
+    background-color: rgb(97, 236, 97);
+}
+
+.block button:nth-child(2) {
+    background-color: rgb(226, 101, 101);
+}
+
+.block button:hover {
+    -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+    box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+}

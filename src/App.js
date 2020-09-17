@@ -1,24 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Table from "./components/Table";
 import './App.css';
+import Home from './components/Home';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+
+(function(window, document){
+  window.onload = init;
+  
+  function init(){
+    const home = document.getElementById('home');
+    home.style.filter = "brightness(.5)";
+    }
+})(window, document, undefined);
+
 
 function App() {
+
+  const [difficulty, setDifficulty] = useState(6);
+
+  const modeChoice = (e) => {
+    setDifficulty(e);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" id="app">
+      <div className="Bck" id="home"></div>
+
+      <Router>
+          <nav className="Nav" id="nav">
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+            </ul>
+          </nav>
+
+          <Switch>
+            <Route path="/game">
+              <Table mode={difficulty} />
+            </Route>
+
+            <Route path="/">
+              <Home difficulty={modeChoice} />
+            </Route>
+          </Switch>
+      </Router>
     </div>
   );
 }
