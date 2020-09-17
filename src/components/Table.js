@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useRouteMatch } from 'react-router-dom';
+import { useRouteMatch, Link } from 'react-router-dom';
 import * as Schema from "./../schema";
 import Card from "./Card";
 import "./table.css";
@@ -115,15 +115,17 @@ function Table() {
 
     if (parseInt(points) === parseInt(mode)) {
         setTimeout(() => {
-            const page = document.getElementById("app");
             
             let congrats = document.createElement('div');
             congrats.id = 'block';
             congrats.className = 'block';
-            congrats.innerHTML = `<p>Congratulations !!! The Sanctuary needs a knight like you !<br>Another game ?</p> 
-                                    <div><button onClick={document.location.reload()}>For Athena !!!</button>
-                                    <button onClick={document.location='/'}>Go back home</button></div>`;
-                                    
+            // congrats.innerHTML = `<p>Congratulations !!! The Sanctuary needs a knight like you !<br>Another game ?</p> 
+            //                         <div><button onClick={document.location.reload()}>For Athena !!!</button>
+            //                         <button onClick={document.location='/'}>Go back home</button></div>`;
+            congrats.innerHTML = "<p>Congratulations !!!<br>The Sanctuary needs a knight like you !<br>See you soon. Athena</p>"
+ 
+            const page = document.getElementById("app");
+            
             if (!document.getElementById('block')) {
                 page.style.filter = "grayscale(.8)";
                 document.getElementById('root').appendChild(congrats);
@@ -131,12 +133,12 @@ function Table() {
 
             if (document.getElementById('block')) {
                 window.addEventListener("click", function(event) {
-                    if (event.target.id === "game_table" || event.target.id === "nav") {
+                    // if (event.target.id === "game_table" || event.target.id === "nav") {
                         if (document.getElementById('block')) {
                             document.getElementById('root').removeChild(congrats);
                             page.style.filter = "grayscale(0)";
                         }
-                    }
+                    // }
                 });
             }
         }, 2000);
