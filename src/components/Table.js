@@ -122,7 +122,7 @@ function Table() {
             congrats.className = 'block';
             congrats.innerHTML = `<p>Congratulations !!! The Sanctuary needs a knight like you !<br>Another game ?</p> 
                                     <div><button onClick={document.location.reload()}>For Athena !!!</button>
-                                    <button onClick={window.location='/'}>Go back home</button></div>`;
+                                    <button onClick={document.location='/'}>Go back home</button></div>`;
                                     
             if (!document.getElementById('block')) {
                 page.style.filter = "grayscale(.8)";
