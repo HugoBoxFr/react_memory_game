@@ -60,56 +60,52 @@ function Table() {
         matchId.push(card);
         matchIndex.push(e.target.id);
 
+        let cardsCollection = document.getElementsByTagName('li');
+        let allCards = [...cardsCollection];
+
+        
         if (matchId.length === 2) {
             setCount(count + 1);
-            let cardsCollection = document.getElementsByTagName('li');
-            let allCards = [...cardsCollection];
+            
+            const elt1_back = document.getElementById(matchIndex[0]);
+            const elt2_back = document.getElementById(matchIndex[1]);
+            const elt1_front = document.getElementById(matchIndex[0].split('-')[0]);
+            const elt2_front = document.getElementById(matchIndex[1].split('-')[0]);
+
             allCards.map(elt => elt.style.cssText = "pointer-events: none; cursor: none" );
 
+            setTimeout(() => {
+                allCards.map(elt => elt.style.cssText = "pointer-events: auto; cursor: pointer" );
+                elt1_back.style.cssText = "pointer-events: auto; cursor: pointer";
+                elt2_back.style.cssText = "pointer-events: auto; cursor: pointer";
+                elt1_front.style.cssText = "pointer-events: auto; cursor: pointer";
+                elt2_front.style.cssText = "pointer-events: auto; cursor: pointer";    
+            }, 3000);
             
             if (matchId[0] === matchId[1]) {
                 setPoints(points + 1);
-
-                setTimeout(() => {
-                    allCards.map(elt => elt.style.cssText = "pointer-events: auto; cursor: pointer" );
-                }, 2000);
-                
                 matchId = [];
                 matchIndex = [];
 
             } else if (matchId[0] !== matchId[1]) {
                 setTimeout(() => {
-                    const elt1_back = document.getElementById(matchIndex[0]);
                     elt1_back.classList.remove('flip90');
                     elt1_back.classList.add('transition');
-                    elt1_back.style.cssText = "pointer-events: auto; cursor: pointer";
-        
-                    const elt2_back = document.getElementById(matchIndex[1]);
+                    
                     elt2_back.classList.remove('flip90');
                     elt2_back.classList.add('transition');
-                    elt2_back.style.cssText = "pointer-events: auto; cursor: pointer";
-    
-                    const elt1_front = document.getElementById(matchIndex[0].split('-')[0]);
+                    
                     elt1_front.classList.remove('transition');
                     elt1_front.classList.add('flip90');
-                    elt1_front.style.cssText = "pointer-events: auto; cursor: pointer";
-        
-                    const elt2_front = document.getElementById(matchIndex[1].split('-')[0]);
+                    
                     elt2_front.classList.remove('transition');
                     elt2_front.classList.add('flip90');
-                    elt2_front.style.cssText = "pointer-events: auto; cursor: pointer";
-
-                    allCards.map(elt => elt.style.cssText = "pointer-events: auto; cursor: pointer" );
-
+                    
                     matchId = [];
                     matchIndex = [];
-                }, 1500);
+                }, 2000);
             }
         }
-    }
-
-    const test = () => {
-        console.log('ok')
     }
 
 
