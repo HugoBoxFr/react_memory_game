@@ -105,6 +105,11 @@
 }
 
 @media screen and (min-width: 200px) and (max-width: 640px) {
+    .SaintsList {
+        margin: 30px auto 0;
+        padding: 0;
+    }
+
     .SaintsList ul li {
         width: 65px;
         height: 80px;
