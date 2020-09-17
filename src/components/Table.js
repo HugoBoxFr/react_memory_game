@@ -18,10 +18,9 @@ function Table() {
     useEffect(() => {
         if (mode === "6") {
             const screen = document.getElementById("display");
-            console.log(screen)
             screen.style.cssText = "width: 900px;";
         }
-        
+
         const fetchData = () => {
             let saintsList = Schema.saints;
             let selectedSaints = [];
