@@ -59,3 +59,9 @@
     50%  {opacity: 0;}
     100% {opacity: 1;}
 }
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    .Welcome {
+        width: 300px;
+    }
+}

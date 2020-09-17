@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Table from "./components/Table";
 import './App.css';
 import Home from './components/Home';
@@ -22,12 +22,6 @@ import {
 
 function App() {
 
-  const [difficulty, setDifficulty] = useState(6);
-
-  const modeChoice = (e) => {
-    setDifficulty(e);
-  }
-
   return (
     <div className="App" id="app">
       <div className="Bck" id="home"></div>
@@ -35,19 +29,19 @@ function App() {
       <Router>
           <nav className="Nav" id="nav">
             <ul>
-              <li>
+              <li onClick={() => document.location.reload()}>
                 <Link to="/">Home</Link>
               </li>
             </ul>
           </nav>
 
           <Switch>
-            <Route path="/game">
-              <Table mode={difficulty} />
+            <Route path="/game/:id">
+              <Table />
             </Route>
 
             <Route path="/">
-              <Home difficulty={modeChoice} />
+              <Home />
             </Route>
           </Switch>
       </Router>

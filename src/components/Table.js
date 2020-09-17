@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useRouteMatch } from 'react-router-dom';
 import * as Schema from "./../schema";
 import Card from "./Card";
 import "./table.css";
@@ -6,11 +7,14 @@ import "./table.css";
 let matchId = [];
 let matchIndex = [];
 
-function Table(props) {
-    const mode = props.mode;
+function Table() {
+
+    const match = useRouteMatch();
+    const mode = match.params.id;
     const [cards, setCards] = useState([]);
     const [points, setPoints] = useState(0);
     const [count, setCount] = useState(0);
+
 
     useEffect(() => {
         const fetchData = () => {
@@ -98,12 +102,8 @@ function Table(props) {
         }
     }
 
-    console.log(mode)
-    console.log(points)
 
-
-
-    if (points === mode) {
+    if (parseInt(points) === parseInt(mode)) {
         setTimeout(() => {
             const page = document.getElementById("app");
             

@@ -7,7 +7,7 @@
 
 .SaintsList {
     width: 1080px;
-    margin: 0 auto;
+    margin: 50px auto 0;
     padding: 10px;
 }
 
@@ -102,4 +102,16 @@
 .block button:hover {
     -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
     box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    .SaintsList ul li {
+        width: 65px;
+        height: 80px;
+    }
+
+    .block {
+        width: 300px;
+        left: calc(50% - 150px);
+    }
 }
