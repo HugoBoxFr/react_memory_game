@@ -1,23 +1,22 @@
 {
   "files": {
     "main.css": "/react_memory_game/static/css/main.e9ea68f0.chunk.css",
-    "main.js": "/react_memory_game/static/js/main.8f70d8d3.chunk.js",
-    "main.js.map": "/react_memory_game/static/js/main.8f70d8d3.chunk.js.map",
+    "main.js": "/react_memory_game/static/js/main.56571543.chunk.js",
+    "main.js.map": "/react_memory_game/static/js/main.56571543.chunk.js.map",
     "runtime-main.js": "/react_memory_game/static/js/runtime-main.689a5e22.js",
     "runtime-main.js.map": "/react_memory_game/static/js/runtime-main.689a5e22.js.map",
-    "static/js/2.92663d72.chunk.js": "/react_memory_game/static/js/2.92663d72.chunk.js",
-    "static/js/2.92663d72.chunk.js.map": "/react_memory_game/static/js/2.92663d72.chunk.js.map",
+    "static/js/2.d135e52f.chunk.js": "/react_memory_game/static/js/2.d135e52f.chunk.js",
+    "static/js/2.d135e52f.chunk.js.map": "/react_memory_game/static/js/2.d135e52f.chunk.js.map",
     "index.html": "/react_memory_game/index.html",
-    "precache-manifest.64aea416f959c670633dd38f79be8693.js": "/react_memory_game/precache-manifest.64aea416f959c670633dd38f79be8693.js",
+    "precache-manifest.4df436ce94b2d7a049b0929eb9c19e41.js": "/react_memory_game/precache-manifest.4df436ce94b2d7a049b0929eb9c19e41.js",
     "service-worker.js": "/react_memory_game/service-worker.js",
     "static/css/main.e9ea68f0.chunk.css.map": "/react_memory_game/static/css/main.e9ea68f0.chunk.css.map",
-    "static/js/2.92663d72.chunk.js.LICENSE.txt": "/react_memory_game/static/js/2.92663d72.chunk.js.LICENSE.txt",
+    "static/js/2.d135e52f.chunk.js.LICENSE.txt": "/react_memory_game/static/js/2.d135e52f.chunk.js.LICENSE.txt",
     "static/media/aiolia.jpg": "/react_memory_game/static/media/aiolia.d4c16ed7.jpg",
     "static/media/aiolos.jpg": "/react_memory_game/static/media/aiolos.a444e326.jpg",
     "static/media/aldebaran.jpg": "/react_memory_game/static/media/aldebaran.b9b36fb9.jpg",
     "static/media/aphrodite.jpg": "/react_memory_game/static/media/aphrodite.6e77a109.jpg",
     "static/media/athena.jpg": "/react_memory_game/static/media/athena.973fe132.jpg",
-    "static/media/back_card.png": "/react_memory_game/static/media/back_card.1b7a6225.png",
     "static/media/back_card.jpg": "/react_memory_game/static/media/back_card.754a3b22.jpg",
     "static/media/App.css": "/react_memory_game/static/media/bck.84da3ca7.png",
     "static/media/camus.jpg": "/react_memory_game/static/media/camus.c1c854a9.jpg",
@@ -42,8 +41,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.689a5e22.js",
-    "static/js/2.92663d72.chunk.js",
+    "static/js/2.d135e52f.chunk.js",
     "static/css/main.e9ea68f0.chunk.css",
-    "static/js/main.8f70d8d3.chunk.js"
+    "static/js/main.56571543.chunk.js"
   ]
 }

@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4db9c9684a51f720b8d674dd28cda3fa",
+    "revision": "d402c53a7235a9ddb4d15ab43892cd06",
     "url": "/react_memory_game/index.html"
   },
   {
-    "revision": "ecf5321ee4afd82ea430",
+    "revision": "e152818b43c58c3c0b85",
     "url": "/react_memory_game/static/css/main.e9ea68f0.chunk.css"
   },
   {
-    "revision": "e36e5787ef12f0d74cdd",
-    "url": "/react_memory_game/static/js/2.92663d72.chunk.js"
+    "revision": "95be18f6f49ef3cfab86",
+    "url": "/react_memory_game/static/js/2.d135e52f.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/react_memory_game/static/js/2.92663d72.chunk.js.LICENSE.txt"
+    "url": "/react_memory_game/static/js/2.d135e52f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ecf5321ee4afd82ea430",
-    "url": "/react_memory_game/static/js/main.8f70d8d3.chunk.js"
+    "revision": "e152818b43c58c3c0b85",
+    "url": "/react_memory_game/static/js/main.56571543.chunk.js"
   },
   {
     "revision": "d2e44800865d5c93859a",
@@ -42,10 +42,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "973fe132387d60fa892616176d0fad9a",
     "url": "/react_memory_game/static/media/athena.973fe132.jpg"
-  },
-  {
-    "revision": "1b7a62254072610aec2a228a7335ffab",
-    "url": "/react_memory_game/static/media/back_card.1b7a6225.png"
   },
   {
     "revision": "754a3b224f73fd30eccadb769467f9a0",
